@@ -1,7 +1,7 @@
 # AI-Enhanced Cloud Platform for Semiconductor Manufacturing Traceability and Quality Intelligence
 
 ## Overview
-A cloud-based platform for semiconductor manufacturing traceability, quality monitoring, document management, analytics, and AI-assisted report summarization.
+A cloud-based platform for semiconductor manufacturing batch traceability, quality monitoring, document management, analytics, and AI-assisted report summarization.
 
 ## Technology Stack
 - Frontend: HTML, CSS, JavaScript
