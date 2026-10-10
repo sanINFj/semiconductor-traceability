@@ -1,0 +1,1802 @@
+[
+  {
+    "lot_id": "SYN-LOT-0001",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0001",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-01T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 54,
+      "Lithography pattern defect": 46,
+      "Overlay/alignment deviation": 31,
+      "Electrical test failure": 254,
+      "Contact/via resistance": 39,
+      "Parametric outlier": 68
+    },
+    "observed_yield_pct": 95.15,
+    "failed_dies": 582,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0002",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0002",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-02T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 34,
+      "Lithography pattern defect": 41,
+      "Overlay/alignment deviation": 17,
+      "Electrical test failure": 105,
+      "Contact/via resistance": 29,
+      "Parametric outlier": 42
+    },
+    "observed_yield_pct": 95.43,
+    "failed_dies": 366,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0003",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0003",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-02T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 17,
+      "Lithography pattern defect": 9,
+      "Overlay/alignment deviation": 12,
+      "Electrical test failure": 79,
+      "Contact/via resistance": 17,
+      "Parametric outlier": 18
+    },
+    "observed_yield_pct": 97.6,
+    "failed_dies": 192,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0004",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0004",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-02T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 27,
+      "Lithography pattern defect": 42,
+      "Overlay/alignment deviation": 37,
+      "Electrical test failure": 149,
+      "Contact/via resistance": 31,
+      "Parametric outlier": 47
+    },
+    "observed_yield_pct": 95.36,
+    "failed_dies": 371,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0005",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0005",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-03T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 114,
+      "Lithography pattern defect": 84,
+      "Overlay/alignment deviation": 80,
+      "Electrical test failure": 362,
+      "Contact/via resistance": 148,
+      "Parametric outlier": 60
+    },
+    "observed_yield_pct": 92.81,
+    "failed_dies": 1079,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0006",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0006",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-03T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 18,
+      "Lithography pattern defect": 26,
+      "Overlay/alignment deviation": 24,
+      "Electrical test failure": 86,
+      "Contact/via resistance": 26,
+      "Parametric outlier": 25
+    },
+    "observed_yield_pct": 96.85,
+    "failed_dies": 252,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0007",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0007",
+    "wafer_count": 19,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-03T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 128,
+      "Lithography pattern defect": 59,
+      "Overlay/alignment deviation": 44,
+      "Electrical test failure": 361,
+      "Contact/via resistance": 84,
+      "Parametric outlier": 45
+    },
+    "observed_yield_pct": 94.55,
+    "failed_dies": 818,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0008",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0008",
+    "wafer_count": 18,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-04T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 40,
+      "Lithography pattern defect": 45,
+      "Overlay/alignment deviation": 73,
+      "Electrical test failure": 271,
+      "Contact/via resistance": 89,
+      "Parametric outlier": 86
+    },
+    "observed_yield_pct": 93.42,
+    "failed_dies": 790,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0009",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0009",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-04T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 19,
+      "Lithography pattern defect": 30,
+      "Overlay/alignment deviation": 12,
+      "Electrical test failure": 96,
+      "Contact/via resistance": 15,
+      "Parametric outlier": 39
+    },
+    "observed_yield_pct": 96.49,
+    "failed_dies": 281,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0010",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0010",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-05T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 63,
+      "Lithography pattern defect": 64,
+      "Overlay/alignment deviation": 41,
+      "Electrical test failure": 122,
+      "Contact/via resistance": 25,
+      "Parametric outlier": 56
+    },
+    "observed_yield_pct": 94.94,
+    "failed_dies": 405,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0011",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0011",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-05T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 93,
+      "Lithography pattern defect": 28,
+      "Overlay/alignment deviation": 52,
+      "Electrical test failure": 218,
+      "Contact/via resistance": 80,
+      "Parametric outlier": 39
+    },
+    "observed_yield_pct": 93.78,
+    "failed_dies": 622,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0012",
+    "synthetic_data": true,
+    "scenario_label": "LOW_YIELD_INJECTED",
+    "wafer_lot_id": "WAF-0012",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-05T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 114,
+      "Lithography pattern defect": 229,
+      "Overlay/alignment deviation": 135,
+      "Electrical test failure": 440,
+      "Contact/via resistance": 257,
+      "Parametric outlier": 157
+    },
+    "observed_yield_pct": 88.21,
+    "failed_dies": 1769,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0013",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0013",
+    "wafer_count": 18,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-06T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 67,
+      "Lithography pattern defect": 62,
+      "Overlay/alignment deviation": 91,
+      "Electrical test failure": 174,
+      "Contact/via resistance": 96,
+      "Parametric outlier": 86
+    },
+    "observed_yield_pct": 94.94,
+    "failed_dies": 759,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0014",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0014",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-06T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 113,
+      "Lithography pattern defect": 108,
+      "Overlay/alignment deviation": 84,
+      "Electrical test failure": 230,
+      "Contact/via resistance": 72,
+      "Parametric outlier": 34
+    },
+    "observed_yield_pct": 91.76,
+    "failed_dies": 824,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0015",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0015",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-06T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 81,
+      "Lithography pattern defect": 75,
+      "Overlay/alignment deviation": 22,
+      "Electrical test failure": 160,
+      "Contact/via resistance": 63,
+      "Parametric outlier": 35
+    },
+    "observed_yield_pct": 96.17,
+    "failed_dies": 575,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0016",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0016",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-07T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 60,
+      "Lithography pattern defect": 76,
+      "Overlay/alignment deviation": 25,
+      "Electrical test failure": 144,
+      "Contact/via resistance": 30,
+      "Parametric outlier": 21
+    },
+    "observed_yield_pct": 95.96,
+    "failed_dies": 485,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0017",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0017",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-07T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 123,
+      "Lithography pattern defect": 31,
+      "Overlay/alignment deviation": 34,
+      "Electrical test failure": 144,
+      "Contact/via resistance": 54,
+      "Parametric outlier": 56
+    },
+    "observed_yield_pct": 93.98,
+    "failed_dies": 722,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0018",
+    "synthetic_data": true,
+    "scenario_label": "MODERATE_YIELD_DROP_INJECTED",
+    "wafer_lot_id": "WAF-0018",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-08T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 119,
+      "Lithography pattern defect": 41,
+      "Overlay/alignment deviation": 89,
+      "Electrical test failure": 258,
+      "Contact/via resistance": 45,
+      "Parametric outlier": 77
+    },
+    "observed_yield_pct": 90.41,
+    "failed_dies": 767,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0019",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0019",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-08T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 47,
+      "Lithography pattern defect": 24,
+      "Overlay/alignment deviation": 54,
+      "Electrical test failure": 104,
+      "Contact/via resistance": 31,
+      "Parametric outlier": 39
+    },
+    "observed_yield_pct": 94.14,
+    "failed_dies": 469,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0020",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0020",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-08T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 66,
+      "Lithography pattern defect": 47,
+      "Overlay/alignment deviation": 92,
+      "Electrical test failure": 328,
+      "Contact/via resistance": 68,
+      "Parametric outlier": 115
+    },
+    "observed_yield_pct": 93.64,
+    "failed_dies": 954,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0021",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0021",
+    "wafer_count": 18,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-09T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 31,
+      "Lithography pattern defect": 32,
+      "Overlay/alignment deviation": 25,
+      "Electrical test failure": 64,
+      "Contact/via resistance": 17,
+      "Parametric outlier": 31
+    },
+    "observed_yield_pct": 96.79,
+    "failed_dies": 257,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0022",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0022",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-09T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 52,
+      "Lithography pattern defect": 96,
+      "Overlay/alignment deviation": 50,
+      "Electrical test failure": 210,
+      "Contact/via resistance": 108,
+      "Parametric outlier": 97
+    },
+    "observed_yield_pct": 94.45,
+    "failed_dies": 832,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0023",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0023",
+    "wafer_count": 18,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-09T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 76,
+      "Lithography pattern defect": 26,
+      "Overlay/alignment deviation": 46,
+      "Electrical test failure": 205,
+      "Contact/via resistance": 55,
+      "Parametric outlier": 54
+    },
+    "observed_yield_pct": 94.05,
+    "failed_dies": 595,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0024",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0024",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-10T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 25,
+      "Lithography pattern defect": 10,
+      "Overlay/alignment deviation": 12,
+      "Electrical test failure": 106,
+      "Contact/via resistance": 18,
+      "Parametric outlier": 21
+    },
+    "observed_yield_pct": 97.59,
+    "failed_dies": 241,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0025",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0025",
+    "wafer_count": 20,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-10T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 76,
+      "Lithography pattern defect": 24,
+      "Overlay/alignment deviation": 50,
+      "Electrical test failure": 158,
+      "Contact/via resistance": 56,
+      "Parametric outlier": 42
+    },
+    "observed_yield_pct": 95.81,
+    "failed_dies": 503,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0026",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0026",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-11T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 80,
+      "Lithography pattern defect": 93,
+      "Overlay/alignment deviation": 40,
+      "Electrical test failure": 212,
+      "Contact/via resistance": 92,
+      "Parametric outlier": 75
+    },
+    "observed_yield_pct": 95.49,
+    "failed_dies": 676,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0027",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0027",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-11T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 47,
+      "Lithography pattern defect": 41,
+      "Overlay/alignment deviation": 10,
+      "Electrical test failure": 141,
+      "Contact/via resistance": 20,
+      "Parametric outlier": 27
+    },
+    "observed_yield_pct": 96.8,
+    "failed_dies": 320,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0028",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0028",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-11T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 97,
+      "Lithography pattern defect": 65,
+      "Overlay/alignment deviation": 75,
+      "Electrical test failure": 216,
+      "Contact/via resistance": 68,
+      "Parametric outlier": 64
+    },
+    "observed_yield_pct": 94.51,
+    "failed_dies": 824,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0029",
+    "synthetic_data": true,
+    "scenario_label": "LOW_YIELD_INJECTED",
+    "wafer_lot_id": "WAF-0029",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-12T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 222,
+      "Lithography pattern defect": 84,
+      "Overlay/alignment deviation": 173,
+      "Electrical test failure": 856,
+      "Contact/via resistance": 172,
+      "Parametric outlier": 81
+    },
+    "observed_yield_pct": 86.75,
+    "failed_dies": 1987,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0030",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0030",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-12T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 18,
+      "Lithography pattern defect": 38,
+      "Overlay/alignment deviation": 17,
+      "Electrical test failure": 89,
+      "Contact/via resistance": 23,
+      "Parametric outlier": 26
+    },
+    "observed_yield_pct": 97.55,
+    "failed_dies": 245,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0031",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0031",
+    "wafer_count": 20,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-12T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 30,
+      "Lithography pattern defect": 37,
+      "Overlay/alignment deviation": 23,
+      "Electrical test failure": 167,
+      "Contact/via resistance": 49,
+      "Parametric outlier": 60
+    },
+    "observed_yield_pct": 95.35,
+    "failed_dies": 465,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0032",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0032",
+    "wafer_count": 19,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-13T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 53,
+      "Lithography pattern defect": 81,
+      "Overlay/alignment deviation": 19,
+      "Electrical test failure": 208,
+      "Contact/via resistance": 58,
+      "Parametric outlier": 22
+    },
+    "observed_yield_pct": 93.54,
+    "failed_dies": 517,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0033",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0033",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-13T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 23,
+      "Lithography pattern defect": 30,
+      "Overlay/alignment deviation": 21,
+      "Electrical test failure": 72,
+      "Contact/via resistance": 20,
+      "Parametric outlier": 17
+    },
+    "observed_yield_pct": 97.44,
+    "failed_dies": 205,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0034",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0034",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-14T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 117,
+      "Lithography pattern defect": 119,
+      "Overlay/alignment deviation": 35,
+      "Electrical test failure": 188,
+      "Contact/via resistance": 69,
+      "Parametric outlier": 73
+    },
+    "observed_yield_pct": 94.53,
+    "failed_dies": 820,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0035",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0035",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-14T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 40,
+      "Lithography pattern defect": 61,
+      "Overlay/alignment deviation": 37,
+      "Electrical test failure": 210,
+      "Contact/via resistance": 68,
+      "Parametric outlier": 72
+    },
+    "observed_yield_pct": 93.87,
+    "failed_dies": 613,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0036",
+    "synthetic_data": true,
+    "scenario_label": "MODERATE_YIELD_DROP_INJECTED",
+    "wafer_lot_id": "WAF-0036",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-14T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 80,
+      "Lithography pattern defect": 101,
+      "Overlay/alignment deviation": 52,
+      "Electrical test failure": 408,
+      "Contact/via resistance": 79,
+      "Parametric outlier": 62
+    },
+    "observed_yield_pct": 90.72,
+    "failed_dies": 928,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0037",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0037",
+    "wafer_count": 20,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-15T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 95,
+      "Lithography pattern defect": 40,
+      "Overlay/alignment deviation": 83,
+      "Electrical test failure": 317,
+      "Contact/via resistance": 66,
+      "Parametric outlier": 65
+    },
+    "observed_yield_pct": 93.84,
+    "failed_dies": 739,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0038",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0038",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-15T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 53,
+      "Lithography pattern defect": 77,
+      "Overlay/alignment deviation": 39,
+      "Electrical test failure": 154,
+      "Contact/via resistance": 70,
+      "Parametric outlier": 49
+    },
+    "observed_yield_pct": 95.86,
+    "failed_dies": 497,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0039",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0039",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-15T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 29,
+      "Lithography pattern defect": 10,
+      "Overlay/alignment deviation": 11,
+      "Electrical test failure": 49,
+      "Contact/via resistance": 20,
+      "Parametric outlier": 21
+    },
+    "observed_yield_pct": 98.22,
+    "failed_dies": 178,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0040",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0040",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-16T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 54,
+      "Lithography pattern defect": 36,
+      "Overlay/alignment deviation": 10,
+      "Electrical test failure": 104,
+      "Contact/via resistance": 28,
+      "Parametric outlier": 23
+    },
+    "observed_yield_pct": 96.17,
+    "failed_dies": 306,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0041",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0041",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-16T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 52,
+      "Lithography pattern defect": 26,
+      "Overlay/alignment deviation": 12,
+      "Electrical test failure": 101,
+      "Contact/via resistance": 21,
+      "Parametric outlier": 19
+    },
+    "observed_yield_pct": 95.97,
+    "failed_dies": 322,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0042",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0042",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-17T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 15,
+      "Lithography pattern defect": 14,
+      "Overlay/alignment deviation": 5,
+      "Electrical test failure": 72,
+      "Contact/via resistance": 13,
+      "Parametric outlier": 22
+    },
+    "observed_yield_pct": 98.31,
+    "failed_dies": 169,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0043",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0043",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-17T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 79,
+      "Lithography pattern defect": 45,
+      "Overlay/alignment deviation": 48,
+      "Electrical test failure": 167,
+      "Contact/via resistance": 29,
+      "Parametric outlier": 60
+    },
+    "observed_yield_pct": 94.69,
+    "failed_dies": 531,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0044",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0044",
+    "wafer_count": 18,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-17T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 38,
+      "Lithography pattern defect": 21,
+      "Overlay/alignment deviation": 39,
+      "Electrical test failure": 125,
+      "Contact/via resistance": 62,
+      "Parametric outlier": 29
+    },
+    "observed_yield_pct": 94.97,
+    "failed_dies": 503,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0045",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0045",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-18T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 54,
+      "Lithography pattern defect": 61,
+      "Overlay/alignment deviation": 18,
+      "Electrical test failure": 127,
+      "Contact/via resistance": 47,
+      "Parametric outlier": 40
+    },
+    "observed_yield_pct": 96.74,
+    "failed_dies": 391,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0046",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0046",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-18T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 32,
+      "Lithography pattern defect": 70,
+      "Overlay/alignment deviation": 20,
+      "Electrical test failure": 148,
+      "Contact/via resistance": 31,
+      "Parametric outlier": 61
+    },
+    "observed_yield_pct": 95.57,
+    "failed_dies": 443,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0047",
+    "synthetic_data": true,
+    "scenario_label": "LOW_YIELD_INJECTED",
+    "wafer_lot_id": "WAF-0047",
+    "wafer_count": 20,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-C",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-18T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 123,
+      "Lithography pattern defect": 179,
+      "Overlay/alignment deviation": 56,
+      "Electrical test failure": 366,
+      "Contact/via resistance": 111,
+      "Parametric outlier": 88
+    },
+    "observed_yield_pct": 85.85,
+    "failed_dies": 1132,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0048",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0048",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-19T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 50,
+      "Lithography pattern defect": 29,
+      "Overlay/alignment deviation": 39,
+      "Electrical test failure": 161,
+      "Contact/via resistance": 42,
+      "Parametric outlier": 31
+    },
+    "observed_yield_pct": 97.35,
+    "failed_dies": 398,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0049",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0049",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-19T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 77,
+      "Lithography pattern defect": 87,
+      "Overlay/alignment deviation": 49,
+      "Electrical test failure": 114,
+      "Contact/via resistance": 54,
+      "Parametric outlier": 41
+    },
+    "observed_yield_pct": 94.47,
+    "failed_dies": 553,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0050",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0050",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-20T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 90,
+      "Lithography pattern defect": 93,
+      "Overlay/alignment deviation": 56,
+      "Electrical test failure": 156,
+      "Contact/via resistance": 62,
+      "Parametric outlier": 64
+    },
+    "observed_yield_pct": 92.62,
+    "failed_dies": 590,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0051",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0051",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-20T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 36,
+      "Lithography pattern defect": 37,
+      "Overlay/alignment deviation": 9,
+      "Electrical test failure": 83,
+      "Contact/via resistance": 36,
+      "Parametric outlier": 32
+    },
+    "observed_yield_pct": 96.94,
+    "failed_dies": 245,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0052",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0052",
+    "wafer_count": 25,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-05",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-20T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 49,
+      "Lithography pattern defect": 75,
+      "Overlay/alignment deviation": 44,
+      "Electrical test failure": 183,
+      "Contact/via resistance": 36,
+      "Parametric outlier": 93
+    },
+    "observed_yield_pct": 95.23,
+    "failed_dies": 715,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0053",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0053",
+    "wafer_count": 22,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-21T05:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 51,
+      "Lithography pattern defect": 64,
+      "Overlay/alignment deviation": 100,
+      "Electrical test failure": 287,
+      "Contact/via resistance": 103,
+      "Parametric outlier": 71
+    },
+    "observed_yield_pct": 94.16,
+    "failed_dies": 876,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0054",
+    "synthetic_data": true,
+    "scenario_label": "MODERATE_YIELD_DROP_INJECTED",
+    "wafer_lot_id": "WAF-0054",
+    "wafer_count": 20,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-21T14:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 183,
+      "Lithography pattern defect": 89,
+      "Overlay/alignment deviation": 54,
+      "Electrical test failure": 230,
+      "Contact/via resistance": 105,
+      "Parametric outlier": 85
+    },
+    "observed_yield_pct": 91.23,
+    "failed_dies": 1052,
+    "investigation_note": "Synthetic anomaly injected for detector validation; not evidence of a real manufacturing root cause."
+  },
+  {
+    "lot_id": "SYN-LOT-0055",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0055",
+    "wafer_count": 21,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-A",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-21T23:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 103,
+      "Lithography pattern defect": 86,
+      "Overlay/alignment deviation": 44,
+      "Electrical test failure": 214,
+      "Contact/via resistance": 76,
+      "Parametric outlier": 72
+    },
+    "observed_yield_pct": 95.77,
+    "failed_dies": 635,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0056",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0056",
+    "wafer_count": 19,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-03",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-22T08:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 107,
+      "Lithography pattern defect": 90,
+      "Overlay/alignment deviation": 70,
+      "Electrical test failure": 228,
+      "Contact/via resistance": 53,
+      "Parametric outlier": 69
+    },
+    "observed_yield_pct": 93.7,
+    "failed_dies": 630,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0057",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0057",
+    "wafer_count": 19,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-22T17:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 31,
+      "Lithography pattern defect": 19,
+      "Overlay/alignment deviation": 21,
+      "Electrical test failure": 58,
+      "Contact/via resistance": 22,
+      "Parametric outlier": 28
+    },
+    "observed_yield_pct": 98.41,
+    "failed_dies": 239,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0058",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0058",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-04",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-23T02:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 72,
+      "Lithography pattern defect": 43,
+      "Overlay/alignment deviation": 65,
+      "Electrical test failure": 133,
+      "Contact/via resistance": 31,
+      "Parametric outlier": 73
+    },
+    "observed_yield_pct": 94.02,
+    "failed_dies": 598,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0059",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0059",
+    "wafer_count": 23,
+    "wafer_diameter_mm": 300,
+    "plant_id": "FAB-02",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-02",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-23T11:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 49,
+      "Lithography pattern defect": 24,
+      "Overlay/alignment deviation": 34,
+      "Electrical test failure": 187,
+      "Contact/via resistance": 52,
+      "Parametric outlier": 65
+    },
+    "observed_yield_pct": 93.27,
+    "failed_dies": 538,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  },
+  {
+    "lot_id": "SYN-LOT-0060",
+    "synthetic_data": true,
+    "scenario_label": "NORMAL",
+    "wafer_lot_id": "WAF-0060",
+    "wafer_count": 24,
+    "wafer_diameter_mm": 200,
+    "plant_id": "FAB-01",
+    "process_revision": "REV-B",
+    "equipment_id": "TESTER-01",
+    "process_history": [
+      "Wafer Fabrication",
+      "Wafer Inspection",
+      "Wafer Sort",
+      "Assembly",
+      "Final Test"
+    ],
+    "event_timestamp": "2026-09-23T20:00:00+00:00",
+    "defect_counts": {
+      "Particle contamination": 27,
+      "Lithography pattern defect": 77,
+      "Overlay/alignment deviation": 21,
+      "Electrical test failure": 177,
+      "Contact/via resistance": 74,
+      "Parametric outlier": 37
+    },
+    "observed_yield_pct": 96.63,
+    "failed_dies": 506,
+    "investigation_note": "Synthetic reference record; no injected yield anomaly."
+  }
+]

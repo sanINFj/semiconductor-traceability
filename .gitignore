@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.aws/
+*.pem
+*.key
+credentials
+secrets.json
+
+# Local AWS deployment artifacts and configuration
+/build/*
+!/build/evaluation/
+!/build/evaluation/**
+
+# Local backups and temporary copies
+*.backup
+*.backup-*
+*.before_*
+*.pre-*
+*.before-finalization
+
+# Editors and operating systems
+.DS_Store
+.vscode/
+.idea/
+
+# Local build artifacts and reports
+/build/
+/build/evaluation/
+
+# Explicitly exclude dashboard and data backups
+frontend/index.html.before-ai-display
+sample_data/lots.json.before_expansion

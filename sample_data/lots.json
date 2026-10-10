@@ -1,0 +1,542 @@
+[
+  {
+    "lot_id": "SYN-LOT-0001",
+    "product_id": "CHIP-A",
+    "tested_dies": 12000,
+    "passing_dies": 11418,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0002",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 7634,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0003",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7808,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0004",
+    "product_id": "CHIP-A",
+    "tested_dies": 8000,
+    "passing_dies": 7629,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0005",
+    "product_id": "CHIP-B",
+    "tested_dies": 15000,
+    "passing_dies": 13921,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0006",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7748,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0007",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14182,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0008",
+    "product_id": "CHIP-B",
+    "tested_dies": 12000,
+    "passing_dies": 11210,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0009",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7719,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0010",
+    "product_id": "CHIP-A",
+    "tested_dies": 8000,
+    "passing_dies": 7595,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0011",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9378,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0012",
+    "product_id": "CHIP-C",
+    "tested_dies": 15000,
+    "passing_dies": 13231,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0013",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14241,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0014",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9176,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0015",
+    "product_id": "CHIP-C",
+    "tested_dies": 15000,
+    "passing_dies": 14425,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0016",
+    "product_id": "CHIP-A",
+    "tested_dies": 12000,
+    "passing_dies": 11515,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0017",
+    "product_id": "CHIP-B",
+    "tested_dies": 12000,
+    "passing_dies": 11278,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0018",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7233,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0019",
+    "product_id": "CHIP-A",
+    "tested_dies": 8000,
+    "passing_dies": 7531,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0020",
+    "product_id": "CHIP-B",
+    "tested_dies": 15000,
+    "passing_dies": 14046,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0021",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7743,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0022",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14168,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0023",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9405,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0024",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9759,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0025",
+    "product_id": "CHIP-A",
+    "tested_dies": 12000,
+    "passing_dies": 11497,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0026",
+    "product_id": "CHIP-B",
+    "tested_dies": 15000,
+    "passing_dies": 14324,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0027",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9680,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0028",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14176,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0029",
+    "product_id": "CHIP-B",
+    "tested_dies": 15000,
+    "passing_dies": 13013,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0030",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9755,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0031",
+    "product_id": "CHIP-A",
+    "tested_dies": 10000,
+    "passing_dies": 9535,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0032",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 7483,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0033",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7795,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0034",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14180,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0035",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9387,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0036",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9072,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0037",
+    "product_id": "CHIP-A",
+    "tested_dies": 12000,
+    "passing_dies": 11261,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0038",
+    "product_id": "CHIP-B",
+    "tested_dies": 12000,
+    "passing_dies": 11503,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0039",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9822,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0040",
+    "product_id": "CHIP-A",
+    "tested_dies": 8000,
+    "passing_dies": 7694,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0041",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 7678,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0042",
+    "product_id": "CHIP-C",
+    "tested_dies": 10000,
+    "passing_dies": 9831,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0043",
+    "product_id": "CHIP-A",
+    "tested_dies": 10000,
+    "passing_dies": 9469,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0044",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9497,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0045",
+    "product_id": "CHIP-C",
+    "tested_dies": 12000,
+    "passing_dies": 11609,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0046",
+    "product_id": "CHIP-A",
+    "tested_dies": 10000,
+    "passing_dies": 9557,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0047",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 6868,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-C"
+  },
+  {
+    "lot_id": "SYN-LOT-0048",
+    "product_id": "CHIP-C",
+    "tested_dies": 15000,
+    "passing_dies": 14602,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0049",
+    "product_id": "CHIP-A",
+    "tested_dies": 10000,
+    "passing_dies": 9447,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0050",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 7410,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0051",
+    "product_id": "CHIP-C",
+    "tested_dies": 8000,
+    "passing_dies": 7755,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0052",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14285,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-05",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0053",
+    "product_id": "CHIP-B",
+    "tested_dies": 15000,
+    "passing_dies": 14124,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0054",
+    "product_id": "CHIP-C",
+    "tested_dies": 12000,
+    "passing_dies": 10948,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0055",
+    "product_id": "CHIP-A",
+    "tested_dies": 15000,
+    "passing_dies": 14365,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-A"
+  },
+  {
+    "lot_id": "SYN-LOT-0056",
+    "product_id": "CHIP-B",
+    "tested_dies": 10000,
+    "passing_dies": 9370,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-03",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0057",
+    "product_id": "CHIP-C",
+    "tested_dies": 15000,
+    "passing_dies": 14761,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0058",
+    "product_id": "CHIP-A",
+    "tested_dies": 10000,
+    "passing_dies": 9402,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-04",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0059",
+    "product_id": "CHIP-B",
+    "tested_dies": 8000,
+    "passing_dies": 7462,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-02",
+    "recipe_revision": "REV-B"
+  },
+  {
+    "lot_id": "SYN-LOT-0060",
+    "product_id": "CHIP-C",
+    "tested_dies": 15000,
+    "passing_dies": 14494,
+    "process_step": "Final Test",
+    "equipment_id": "TESTER-01",
+    "recipe_revision": "REV-B"
+  }
+]
