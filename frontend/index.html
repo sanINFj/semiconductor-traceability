@@ -327,7 +327,7 @@ function showResult(data){
  $("baselineValue").textContent=a.baseline_yield_pct==null?"N/A":fmt(a.baseline_yield_pct);
  $("dropValue").textContent=a.yield_drop_percentage_points==null?"N/A":Number(a.yield_drop_percentage_points).toFixed(2)+" pp";
  $("failedValue").textContent=data.failed_dies??"—";
- $("resultMessage").textContent=a.message||"Analysis completed. Review the returned status and available comparison data."; 
+ $("resultMessage").textContent=a.message||"Analysis completed. Review the returned status and available comparison data.";
  const ai=data.ai_investigation;
  const aiPanel=$("aiInvestigation");
  const aiSummary=$("aiInvestigationSummary");
