@@ -61,6 +61,38 @@ h1{font:600 clamp(27px,3vw,36px) 'Space Grotesk',sans-serif;letter-spacing:-1.2p
 .metric-foot{font-size:11px;color:var(--muted)}
 .metric-foot span{color:var(--green)}
 .workspace{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(330px,.82fr);gap:18px;align-items:start}
+
+.overview-grid{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:18px;margin:0 0 24px}
+.overview-panel{background:linear-gradient(145deg,#111a2b,#0e1524);border:1px solid var(--line);border-radius:15px;padding:20px;min-width:0}
+.overview-panel h2{font-size:16px;margin:0 0 5px}
+.overview-note{font-size:11px;color:var(--muted);margin:0 0 18px}
+.status-breakdown{display:grid;gap:15px}
+.status-line{display:grid;grid-template-columns:105px 1fr 28px;align-items:center;gap:10px;font-size:12px}
+.status-track{height:7px;border-radius:8px;background:#202b40;overflow:hidden}
+.status-fill{height:100%;width:0;border-radius:8px;transition:width .25s}
+.status-fill.alert{background:var(--red)}
+.status-fill.normal{background:var(--green)}
+.status-fill.insufficient{background:var(--amber)}
+.status-count{text-align:right;font-variant-numeric:tabular-nums}
+.overview-list{display:grid;gap:10px}
+.overview-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.overview-row:last-child{border-bottom:0}
+.overview-lot{font-size:12px;font-weight:600}
+.overview-meta{font-size:11px;color:var(--muted);margin-top:4px}
+.overview-empty{font-size:12px;color:var(--muted);padding:10px 0}
+.overview-status{font-size:10px;font-weight:700;letter-spacing:.04em}
+.overview-status.ALERT{color:var(--red)}
+.overview-status.NORMAL{color:var(--green)}
+.overview-status.INSUFFICIENT_DATA{color:var(--amber)}
+.yield-bars{display:flex;align-items:flex-end;gap:12px;height:112px;padding:10px 2px 0;border-bottom:1px solid var(--line)}
+.yield-bar-item{display:flex;flex:1;min-width:0;height:100%;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px}
+.yield-bar-value{font-size:10px;color:var(--muted)}
+.yield-bar{width:min(30px,75%);min-height:3px;border-radius:5px 5px 0 0;background:linear-gradient(180deg,var(--cyan),var(--purple))}
+.yield-bar-label{font-size:10px;color:var(--muted);max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.metric[role="button"]{cursor:pointer}
+.metric[role="button"]:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+@media(max-width:850px){.overview-grid{grid-template-columns:1fr}}
+
 .panel{padding:22px;min-width:0}
 .panel-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:21px}
 .panel h2{font:600 18px 'Space Grotesk',sans-serif;letter-spacing:-.3px;margin:0 0 6px}
@@ -165,10 +197,32 @@ tbody tr:hover{background:#172237}
   </section>
 
   <section class="metrics">
-    <div class="metric" style="--glow:#5de4ff"><div class="metric-head">LOTS ANALYZED <span class="metric-symbol">◈</span></div><div class="metric-value" id="mLots">0</div><div class="metric-foot">This browser's history</div></div>
-    <div class="metric" style="--glow:#ff7d92;--accent:#ff7d92"><div class="metric-head">YIELD ALERTS <span class="metric-symbol">↗</span></div><div class="metric-value" id="mAlerts">0</div><div class="metric-foot">Analyses flagged ALERT</div></div>
-    <div class="metric" style="--glow:#72edbb;--accent:#72edbb"><div class="metric-head">MEAN OBSERVED YIELD <span class="metric-symbol">◎</span></div><div class="metric-value" id="mYield">—</div><div class="metric-foot">Across recorded analyses</div></div>
-    <div class="metric" style="--glow:#a99aff;--accent:#a99aff"><div class="metric-head">LATEST STATUS <span class="metric-symbol">⌁</span></div><div class="metric-value" id="mStatus" style="font-size:22px">READY</div><div class="metric-foot">Run an analysis to update</div></div>
+    <div class="metric" style="--glow:#5de4ff" role="button" tabindex="0" data-kpi="ALL" aria-label="Lots Analyzed, open analysis history"><div class="metric-head">LOTS ANALYZED <span class="metric-symbol">◈</span></div><div class="metric-value" id="mLots">0</div><div class="metric-foot">This browser's history</div></div>
+    <div class="metric" style="--glow:#ff7d92;--accent:#ff7d92" role="button" tabindex="0" data-kpi="ALERT" aria-label="Yield Alerts, open analysis history"><div class="metric-head">YIELD ALERTS <span class="metric-symbol">↗</span></div><div class="metric-value" id="mAlerts">0</div><div class="metric-foot">Analyses flagged ALERT</div></div>
+    <div class="metric" style="--glow:#72edbb;--accent:#72edbb" role="button" tabindex="0" data-kpi="ALL" aria-label="Mean Observed Yield, open analysis history"><div class="metric-head">MEAN OBSERVED YIELD <span class="metric-symbol">◎</span></div><div class="metric-value" id="mYield">—</div><div class="metric-foot">Across recorded analyses</div></div>
+    <div class="metric" style="--glow:#a99aff;--accent:#a99aff" role="button" tabindex="0" data-kpi="ALL" aria-label="Latest Status, open analysis history"><div class="metric-head">LATEST STATUS <span class="metric-symbol">⌁</span></div><div class="metric-value" id="mStatus" style="font-size:22px">READY</div><div class="metric-foot">Run an analysis to update</div></div>
+  </section>
+
+
+  <section class="overview-grid" aria-label="Quality overview">
+    <div class="overview-panel">
+      <h2>Alert breakdown</h2>
+      <p class="overview-note">Status distribution in this browser's saved history</p>
+      <div class="status-breakdown">
+        <div class="status-line"><span>Alert</span><div class="status-track"><div class="status-fill alert" id="breakdownAlert"></div></div><strong class="status-count" id="countAlert">0</strong></div>
+        <div class="status-line"><span>Normal</span><div class="status-track"><div class="status-fill normal" id="breakdownNormal"></div></div><strong class="status-count" id="countNormal">0</strong></div>
+        <div class="status-line"><span>Insufficient data</span><div class="status-track"><div class="status-fill insufficient" id="breakdownInsufficient"></div></div><strong class="status-count" id="countInsufficient">0</strong></div>
+      </div>
+    </div>
+    <div class="overview-panel">
+      <h2>Recent alerts</h2>
+      <p class="overview-note">Latest saved ALERT analyses</p>
+      <div class="overview-list" id="overviewAlerts"><div class="overview-empty">No saved alerts yet. Run a lot analysis to populate this panel.</div></div>
+      <div style="height:18px"></div>
+      <h2>Yield trend</h2>
+      <p class="overview-note">Latest saved analyses · observed yield (%)</p>
+      <div class="yield-bars" id="yieldTrend" role="img" aria-label="Observed yield for recent saved analyses"><div class="overview-empty">No yield history yet.</div></div>
+    </div>
   </section>
 
   <section class="workspace">
@@ -305,15 +359,68 @@ function renderComparisons(){
 function getHistory(){try{return JSON.parse(localStorage.getItem("waferiq_history")||"[]")}catch{return []}}
 function saveHistory(item){const rows=getHistory().filter(x=>x.lot_id!==item.lot_id);rows.unshift(item);localStorage.setItem("waferiq_history",JSON.stringify(rows.slice(0,100)));renderHistory()}
 function renderMetrics(){
- const rows=getHistory();$("mLots").textContent=rows.length;$("mAlerts").textContent=rows.filter(x=>x.status==="ALERT").length;
- $("mYield").textContent=rows.length?fmt(rows.reduce((a,x)=>a+Number(x.observed_yield_pct||0),0)/rows.length):"—";
- $("mStatus").textContent=rows.length?rows[0].status.replace("_"," "):"READY";
+ const rows=getHistory();
+ const alerts=rows.filter(x=>x.status==="ALERT");
+ const normal=rows.filter(x=>x.status==="NORMAL");
+ const insufficient=rows.filter(x=>x.status==="INSUFFICIENT_DATA");
+ const total=rows.length;
+
+ $("mLots").textContent=total;
+ $("mAlerts").textContent=alerts.length;
+ $("mYield").textContent=total
+   ?fmt(rows.reduce((a,x)=>a+Number(x.observed_yield_pct||0),0)/total)
+   :"—";
+ $("mStatus").textContent=total?String(rows[0].status||"READY").replaceAll("_"," "):"READY";
+
+ const counts=[
+   ["countAlert","breakdownAlert",alerts.length],
+   ["countNormal","breakdownNormal",normal.length],
+   ["countInsufficient","breakdownInsufficient",insufficient.length]
+ ];
+ counts.forEach(([countId,barId,count])=>{
+   $(countId).textContent=count;
+   $(barId).style.width=total?`${count/total*100}%`:"0%";
+ });
+
+ const recent=alerts.slice(0,4);
+ $("overviewAlerts").innerHTML=recent.length
+   ?recent.map(x=>`
+      <div class="overview-row">
+        <div>
+          <div class="overview-lot">${esc(x.lot_id)}</div>
+          <div class="overview-meta">${esc(x.product_id||"Unknown product")} · Yield ${fmt(x.observed_yield_pct)}</div>
+        </div>
+        <button class="link-button" type="button" data-overview-lot="${esc(x.lot_id)}">Open ↗</button>
+      </div>`).join("")
+   :'<div class="overview-empty">No saved alerts yet. Run a lot analysis to populate this panel.</div>';
+
+ const trend=rows.slice(0,7).reverse();
+ const validTrend=trend.filter(x=>Number.isFinite(Number(x.observed_yield_pct)));
+ $("yieldTrend").innerHTML=validTrend.length
+   ?validTrend.map(x=>{
+      const value=Math.max(0,Math.min(100,Number(x.observed_yield_pct)));
+      return `<div class="yield-bar-item" title="${esc(x.lot_id)}: ${value.toFixed(2)}%">
+        <span class="yield-bar-value">${value.toFixed(1)}%</span>
+        <div class="yield-bar" style="height:${Math.max(3,value)}%"></div>
+        <span class="yield-bar-label">${esc(x.lot_id)}</span>
+      </div>`;
+    }).join("")
+   :'<div class="overview-empty">No yield history yet. Analyze a lot to start the trend.</div>';
+
+ $("yieldTrend").setAttribute(
+   "aria-label",
+   validTrend.length
+     ?`Observed yield for ${validTrend.length} recent saved analyses, from oldest to newest`
+     :"No saved yield data"
+ );
 }
+
 function renderHistory(){
  const q=$("historySearch").value.toLowerCase(),f=$("historyFilter").value;
  const rows=getHistory().filter(x=>(f==="ALL"||x.status===f)&&`${x.lot_id} ${x.product_id}`.toLowerCase().includes(q));
  $("historyRows").innerHTML=rows.map((x,i)=>`<tr class="history-row" tabindex="0" data-index="${i}"><td class="mono">${esc(x.lot_id)}</td><td>${esc(x.product_id)}</td><td>${fmt(x.observed_yield_pct)}</td><td>${fmt(x.baseline_yield_pct)}</td><td>${x.yield_drop_percentage_points==null?"—":Number(x.yield_drop_percentage_points).toFixed(2)+" pp"}</td><td><span class="status ${esc(x.status)}">${esc(x.status)}</span></td><td><button class="link-button" data-view="${esc(x.lot_id)}">Open ↗</button></td></tr>`).join("");
- $("historyEmpty").style.display=rows.length?"none":"block";renderMetrics();
+ $("historyEmpty").style.display=rows.length?"none":"block";
+ renderMetrics();
 }
 function showResult(data){
  latestResult=data;$("result").style.display="block";
@@ -514,6 +621,34 @@ $("savePrefsBtn").addEventListener("click", async () => {
 });
 
 restoreWaferIQSession();
+
+document.querySelectorAll(".metric[data-kpi]").forEach(card=>{
+ const openHistory=()=>{
+   $("historyFilter").value=card.dataset.kpi;
+   location.hash="history";
+   $("history").scrollIntoView({behavior:"smooth",block:"start"});
+   renderHistory();
+ };
+ card.addEventListener("click",openHistory);
+ card.addEventListener("keydown",event=>{
+   if(event.key==="Enter"||event.key===" "){
+     event.preventDefault();
+     openHistory();
+   }
+ });
+});
+
+document.addEventListener("click",event=>{
+ const button=event.target.closest("[data-overview-lot]");
+ if(!button)return;
+ const lotId=button.dataset.overviewLot;
+ $("historySearch").value=lotId;
+ $("historyFilter").value="ALL";
+ location.hash="history";
+ $("history").scrollIntoView({behavior:"smooth",block:"start"});
+ renderHistory();
+});
+
 renderComparisons();renderHistory();
 </script>
 </body>
