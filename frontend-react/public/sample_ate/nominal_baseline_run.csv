@@ -1,0 +1,2 @@
+lot_id,product_id,tested_dies,passing_dies,process_step,equipment_id,recipe_revision
+LOT-ATE-NOMINAL-02,CHIP-A,10000,9820,Final Test,TESTER-01,REV-A

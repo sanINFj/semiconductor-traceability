@@ -1441,3 +1441,84 @@ tbody tr:hover { background: #131e33; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ATE Test Ingestion & Presets */
+.ate-ingestion-box {
+  background: #090e1b;
+  border: 1px dashed #243552;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+.ate-drop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ate-file-loaded-pill {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--green);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: var(--mono-font);
+}
+.ate-drop-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.file-upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #111a2f;
+  border: 1px solid #233454;
+  color: var(--cyan);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.file-upload-label:hover {
+  background: #17233e;
+  border-color: var(--cyan);
+}
+.ate-presets-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.presets-label {
+  font-size: 11px;
+  color: #94a3b8;
+}
+.ate-preset-btn {
+  background: #0d1526;
+  border: 1px solid #1f2e49;
+  border-radius: 4px;
+  color: #cbd5e1;
+  font-size: 11px;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.ate-preset-btn:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+.ate-preset-btn.excursion:hover {
+  border-color: #f87171;
+  color: #f87171;
+}
+.ate-preset-btn.nominal:hover {
+  border-color: #72edbb;
+  color: #72edbb;
+}

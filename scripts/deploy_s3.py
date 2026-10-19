@@ -3,7 +3,8 @@ import subprocess
 import sys
 
 def main():
-    print("--- 1. Setting S3 Website Configuration ---")
+    bucket = sys.argv[1] if len(sys.argv) > 1 else "waferiq-platform"
+    print(f"--- 1. Setting S3 Website Configuration on {bucket} ---")
     website_config = {
         "IndexDocument": {"Suffix": "index.html"},
         "ErrorDocument": {"Key": "index.html"}
@@ -13,7 +14,7 @@ def main():
 
     res1 = subprocess.run([
         "aws", "s3api", "put-bucket-website",
-        "--bucket", "aws-websitesc-neww",
+        "--bucket", bucket,
         "--website-configuration", "file:///tmp/website.json",
         "--region", "ap-southeast-2"
     ], capture_output=True, text=True)
@@ -22,7 +23,7 @@ def main():
         sys.exit(1)
     print("Website configuration updated with SPA error routing.")
 
-    print("--- 2. Setting S3 Bucket Public Read Policy ---")
+    print(f"--- 2. Setting S3 Bucket Public Read Policy on {bucket} ---")
     policy = {
         "Version": "2012-10-17",
         "Statement": [
@@ -31,7 +32,7 @@ def main():
                 "Effect": "Allow",
                 "Principal": "*",
                 "Action": "s3:GetObject",
-                "Resource": "arn:aws:s3:::aws-websitesc-neww/*"
+                "Resource": f"arn:aws:s3:::{bucket}/*"
             }
         ]
     }
@@ -40,7 +41,7 @@ def main():
 
     res2 = subprocess.run([
         "aws", "s3api", "put-bucket-policy",
-        "--bucket", "aws-websitesc-neww",
+        "--bucket", bucket,
         "--policy", "file:///tmp/policy.json",
         "--region", "ap-southeast-2"
     ], capture_output=True, text=True)
@@ -49,11 +50,11 @@ def main():
         sys.exit(1)
     print("Bucket policy applied successfully (PublicReadGetObject).")
 
-    print("--- 3. Syncing dist/ directory to s3://aws-websitesc-neww ---")
+    print(f"--- 3. Syncing dist/ directory to s3://{bucket} ---")
     res3 = subprocess.run([
         "aws", "s3", "sync",
         "/home/sanjana066/semiconductor-traceability/frontend-react/dist",
-        "s3://aws-websitesc-neww",
+        f"s3://{bucket}",
         "--delete",
         "--region", "ap-southeast-2"
     ], capture_output=True, text=True)
