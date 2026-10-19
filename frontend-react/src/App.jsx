@@ -28,12 +28,14 @@ import PreferencesConsole from "./components/PreferencesConsole";
 import SignUpConsole from "./components/SignUpConsole";
 import EightDReportModal from "./components/EightDReportModal";
 import LotComparator from "./components/LotComparator";
+import AutoIngestionHub from "./components/AutoIngestionHub";
 
 const navigation = [
   {
     label: "WORKSPACE",
     items: [
       { to: "/overview", icon: "◈", label: "Quality overview" },
+      { to: "/ingest", icon: "⚡", label: "Auto-generate from file" },
       { to: "/lots", icon: "▦", label: "Lot explorer" },
       { to: "/compare", icon: "⇋", label: "Lot comparator" },
       { to: "/investigations", icon: "⌕", label: "Investigation center" },
@@ -53,10 +55,11 @@ function Badge({ status }) {
   return <span className={`badge ${norm}`}>{status}</span>;
 }
 
-function Header({ userSession, onSignOut }) {
+function Header({ userSession, onSignOut, theme, onThemeChange }) {
   const location = useLocation();
   const names = {
     "/overview": "Quality Overview",
+    "/ingest": "Automated File Ingestion & Generation",
     "/lots": "Lot Explorer",
     "/compare": "Lot Comparator (Side-by-Side)",
     "/investigations": "Investigation Center",
@@ -77,6 +80,25 @@ function Header({ userSession, onSignOut }) {
         <strong>{title}</strong>
       </div>
       <div className="top-actions">
+        <NavLink to="/ingest" className="auto-ingest-topbar-btn">
+          ⚡ Auto-Generate from File
+        </NavLink>
+
+        <div className="theme-selector-pill">
+          <span className="theme-icon">🎨</span>
+          <select
+            value={theme}
+            onChange={(e) => onThemeChange(e.target.value)}
+            className="theme-select"
+            aria-label="Color Theme"
+          >
+            <option value="titanium">🌌 Obsidian Titanium</option>
+            <option value="sapphire">💎 Sapphire Foundry</option>
+            <option value="emerald">🌲 Emerald Silicon</option>
+            <option value="nordic-light">☀️ Nordic Cleanroom</option>
+          </select>
+        </div>
+
         <div className="banner-tag synthetic-alert-tag">
           <span className="pulse-dot amber" />
           <span>SYNTHETIC BENCHMARK DATA</span>
@@ -104,7 +126,7 @@ function Header({ userSession, onSignOut }) {
   );
 }
 
-function Layout({ lots, onAddLot, userSession, setUserSession }) {
+function Layout({ lots, onAddLot, userSession, setUserSession, theme, onThemeChange }) {
   const handleSignOut = () => {
     signOutUser();
     setUserSession(null);
@@ -155,11 +177,17 @@ function Layout({ lots, onAddLot, userSession, setUserSession }) {
       </aside>
 
       <main className="main-area">
-        <Header userSession={userSession} onSignOut={handleSignOut} />
+        <Header
+          userSession={userSession}
+          onSignOut={handleSignOut}
+          theme={theme}
+          onThemeChange={onThemeChange}
+        />
         <div className="page-content">
           <Routes>
             <Route path="/" element={<Navigate to="/overview" replace />} />
             <Route path="/overview" element={<Overview lots={lots} onAddLot={onAddLot} />} />
+            <Route path="/ingest" element={<AutoIngestionHub lots={lots} onAddLot={onAddLot} />} />
             <Route path="/lots" element={<Lots lots={lots} onAddLot={onAddLot} />} />
             <Route path="/lots/:lotId" element={<LotDetails lots={lots} />} />
             <Route path="/compare" element={<CompareView lots={lots} />} />
@@ -1732,6 +1760,14 @@ function SignUpPage() {
 function App() {
   const [lots, setLots] = useState(BENCHMARK_LOTS);
   const [userSession, setUserSession] = useState(null);
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("waferiq-theme") || "titanium";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("waferiq-theme", theme);
+  }, [theme]);
 
   useEffect(() => {
     restoreUserSession().then((s) => {
@@ -1747,20 +1783,20 @@ function App() {
       tested_dies: analyzedLot.tested_dies,
       passing_dies: analyzedLot.passing_dies,
       failed_dies: analyzedLot.failed_dies,
-      yield: Number(analyzedLot.final_test_yield?.toFixed(2) ?? a.observed_yield_pct),
-      baseline: a.baseline_yield_pct,
-      yield_drop_pp: a.yield_drop_pp ?? a.yield_drop_percentage_points,
-      status: a.status || "NORMAL",
+      yield: Number(analyzedLot.yield ?? analyzedLot.final_test_yield?.toFixed(2) ?? a.observed_yield_pct),
+      baseline: analyzedLot.baseline ?? a.baseline_yield_pct,
+      yield_drop_pp: analyzedLot.yield_drop_pp ?? a.yield_drop_pp ?? a.yield_drop_percentage_points,
+      status: analyzedLot.status || a.status || "NORMAL",
       process_step: analyzedLot.process_step || "Final Test",
       equipment_id: analyzedLot.equipment_id || "TESTER-01",
       recipe_revision: analyzedLot.recipe_revision || "REV-A",
-      wafer_lot_id: `WAF-${analyzedLot.lot_id.slice(-4)}`,
-      wafer_count: 24,
+      wafer_lot_id: analyzedLot.wafer_lot_id || `WAF-${analyzedLot.lot_id.slice(-4)}`,
+      wafer_count: analyzedLot.wafer_count || 24,
       wafer_diameter_mm: 300,
       plant_id: "FAB-01",
-      scenario_label: a.status === "ALERT" ? "INJECTED_YIELD_DROP" : "NORMAL",
-      event_timestamp: new Date().toISOString(),
-      defect_counts: {
+      scenario_label: analyzedLot.scenario_label || ((analyzedLot.status || a.status) === "ALERT" ? "INJECTED_YIELD_DROP" : "NORMAL"),
+      event_timestamp: analyzedLot.event_timestamp || new Date().toISOString(),
+      defect_counts: analyzedLot.defect_counts || {
         "Particle contamination": 85,
         "Lithography pattern defect": 42,
         "Overlay/alignment deviation": 28,
@@ -1769,12 +1805,14 @@ function App() {
         "Parametric outlier": 50,
       },
       investigation_note:
+        analyzedLot.investigation_note ||
         analyzedLot.ai_investigation?.summary ||
         "Newly analyzed lot from live analysis console.",
+      ai_investigation: analyzedLot.ai_investigation,
       is_synthetic: true,
     };
 
-    setLots((prev) => [formattedLot, ...prev]);
+    setLots((prev) => [formattedLot, ...prev.filter((l) => l.lot_id !== formattedLot.lot_id)]);
   };
 
   return (
@@ -1784,6 +1822,8 @@ function App() {
         onAddLot={handleAddLot}
         userSession={userSession}
         setUserSession={setUserSession}
+        theme={theme}
+        onThemeChange={setTheme}
       />
     </BrowserRouter>
   );

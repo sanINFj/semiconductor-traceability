@@ -1,0 +1,2 @@
+lot_id,product_id,tested_dies,passing_dies,process_step,equipment_id,recipe_revision,defect_particle,defect_litho,defect_contact,defect_electrical,defect_parametric
+LOT-AUTO-NOMINAL-104,CHIP-A,10000,9840,Final Test,TESTER-01,REV-A,25,18,30,45,42

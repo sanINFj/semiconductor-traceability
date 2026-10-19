@@ -1,0 +1,2 @@
+lot_id,product_id,tested_dies,passing_dies,process_step,equipment_id,recipe_revision,defect_particle,defect_litho,defect_contact,defect_electrical,defect_parametric
+LOT-AUTO-PARTICLE-892,CHIP-A,10000,8950,Final Test,TESTER-05,REV-A,520,110,95,180,145

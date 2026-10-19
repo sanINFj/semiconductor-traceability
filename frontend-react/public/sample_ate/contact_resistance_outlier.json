@@ -1,0 +1,16 @@
+{
+  "lot_id": "LOT-AUTO-PROBE-903",
+  "product_id": "CHIP-B",
+  "tested_dies": 10000,
+  "passing_dies": 8750,
+  "process_step": "Final Test",
+  "equipment_id": "TESTER-02",
+  "recipe_revision": "REV-C",
+  "defect_counts": {
+    "Contact/via resistance": 680,
+    "Electrical test failure": 310,
+    "Parametric outlier": 180,
+    "Particle contamination": 40,
+    "Lithography pattern defect": 40
+  }
+}
