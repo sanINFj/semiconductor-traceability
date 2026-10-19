@@ -34,18 +34,87 @@ const navigation = [
   {
     label: "WORKSPACE",
     items: [
-      { to: "/overview", icon: "◈", label: "Quality overview" },
-      { to: "/ingest", icon: "⚡", label: "Auto-generate from file" },
-      { to: "/lots", icon: "▦", label: "Lot explorer" },
-      { to: "/compare", icon: "⇋", label: "Lot comparator" },
-      { to: "/investigations", icon: "⌕", label: "Investigation center" },
+      {
+        to: "/overview",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+        ),
+        label: "Quality overview",
+      },
+      {
+        to: "/ingest",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+        ),
+        label: "Auto-process ATE file",
+      },
+      {
+        to: "/lots",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="2" x2="12" y2="22"></line>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+          </svg>
+        ),
+        label: "Lot explorer",
+      },
+      {
+        to: "/compare",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+        ),
+        label: "Lot comparator",
+      },
+      {
+        to: "/investigations",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+        ),
+        label: "Investigation center",
+      },
     ],
   },
   {
     label: "INTELLIGENCE",
     items: [
-      { to: "/process-intelligence", icon: "⌁", label: "Process intelligence" },
-      { to: "/model-lab", icon: "⌘", label: "Anomaly model lab" },
+      {
+        to: "/process-intelligence",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        ),
+        label: "Process intelligence",
+      },
+      {
+        to: "/model-lab",
+        icon: (
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        ),
+        label: "Anomaly model lab",
+      },
     ],
   },
 ];
@@ -81,21 +150,21 @@ function Header({ userSession, onSignOut, theme, onThemeChange }) {
       </div>
       <div className="top-actions">
         <NavLink to="/ingest" className="auto-ingest-topbar-btn">
-          ⚡ Auto-Generate from File
+          Auto-Process ATE File ↗
         </NavLink>
 
         <div className="theme-selector-pill">
-          <span className="theme-icon">🎨</span>
+          <span className="theme-label-text">Theme:</span>
           <select
             value={theme}
             onChange={(e) => onThemeChange(e.target.value)}
             className="theme-select"
             aria-label="Color Theme"
           >
-            <option value="titanium">🌌 Obsidian Titanium</option>
-            <option value="sapphire">💎 Sapphire Foundry</option>
-            <option value="emerald">🌲 Emerald Silicon</option>
-            <option value="nordic-light">☀️ Nordic Cleanroom</option>
+            <option value="titanium">Obsidian Titanium (Default)</option>
+            <option value="sapphire">Foundry Sapphire</option>
+            <option value="emerald">Matrix Emerald</option>
+            <option value="nordic-light">Cleanroom Light</option>
           </select>
         </div>
 
@@ -296,7 +365,7 @@ function Overview({ lots, onAddLot }) {
               className="btn btn-primary"
               onClick={() => setShowLiveConsole(!showLiveConsole)}
             >
-              {showLiveConsole ? "Hide Analysis Console" : "⚡ Live Analysis Console"}
+              {showLiveConsole ? "Hide Analysis Console" : "Live Analysis Console ↗"}
             </button>
             <button className="btn btn-secondary" onClick={() => navigate("/lots")}>
               Explore Lots ({lots.length}) ↗
@@ -334,28 +403,50 @@ function Overview({ lots, onAddLot }) {
           value={filteredLots.length.toString().padStart(2, "0")}
           note={`Synthetic benchmark (${selectedProduct})`}
           accent="cyan"
-          icon="▦"
+          icon={
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          }
         />
         <Metric
           label="ACTIVE YIELD ALERTS"
           value={alertLots.length.toString().padStart(2, "0")}
           note={`Drop ≥ 5.0 pp vs cohort baseline`}
           accent="red"
-          icon="⚠️"
+          icon={
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+          }
         />
         <Metric
           label="NOMINAL LOTS"
           value={normalLots.length.toString().padStart(2, "0")}
           note={`${((normalLots.length / (filteredLots.length || 1)) * 100).toFixed(0)}% passing tolerance`}
           accent="green"
-          icon="✓"
+          icon={
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          }
         />
         <Metric
           label="MEDIAN YIELD"
           value={`${medianYield}%`}
           note={`Total scrap: ${totalFailed.toLocaleString()} dies`}
           accent="purple"
-          icon="◎"
+          icon={
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          }
         />
       </div>
 
@@ -602,7 +693,7 @@ function Lots({ lots, onAddLot }) {
               className="btn btn-secondary"
               onClick={() => navigate("/compare")}
             >
-              ⇋ Compare Lots
+              Compare Lots ↗
             </button>
           </div>
         }
@@ -621,7 +712,12 @@ function Lots({ lots, onAddLot }) {
       <section className="panel">
         <div className="toolbar-complex">
           <div className="search-box">
-            <span className="search-icon">🔍</span>
+            <span className="search-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
             <input
               aria-label="Search lots"
               placeholder="Search Lot ID, Wafer Lot, Equipment, or Fab…"
@@ -855,7 +951,7 @@ function LotDetails({ lots }) {
               className="btn btn-secondary"
               onClick={() => setShow8DModal(true)}
             >
-              📄 8D Quality Report
+              8D Quality Report
             </button>
             {lot.status === "ALERT" && (
               <button
@@ -941,19 +1037,19 @@ function LotDetails({ lots }) {
             className={`tab-btn ${activeTab === "wafer-map" ? "active" : ""}`}
             onClick={() => setActiveTab("wafer-map")}
           >
-            ◎ Visual Wafer Map Inspector
+            Wafer Map Inspector
           </button>
           <button
             className={`tab-btn ${activeTab === "defects" ? "active" : ""}`}
             onClick={() => setActiveTab("defects")}
           >
-            📊 Defect Pareto Breakdown
+            Defect Pareto Breakdown
           </button>
           <button
             className={`tab-btn ${activeTab === "cohort" ? "active" : ""}`}
             onClick={() => setActiveTab("cohort")}
           >
-            ▦ Comparison Cohort Lots ({cohortLots.length})
+            Comparison Cohort Lots ({cohortLots.length})
           </button>
         </div>
 
@@ -1095,7 +1191,7 @@ function CaseEditor({ initialCase, onSave, onStatusChange, onOpen8D }) {
         </div>
         <div className="case-header-actions">
           <button className="btn btn-sm btn-secondary" onClick={() => onOpen8D(initialCase.lot_id)}>
-            📄 8D Report
+            8D Quality Report
           </button>
           <span className={`status-pill-lg ${initialCase.status.toLowerCase()}`}>
             STATUS: {initialCase.status}
@@ -1124,7 +1220,7 @@ function CaseEditor({ initialCase, onSave, onStatusChange, onOpen8D }) {
       {/* AI Investigation Guidance Brief */}
       <div className="bedrock-brief-card mb-5">
         <div className="bedrock-header">
-          <span className="bedrock-icon">⚡</span>
+          <span className="bedrock-chip">AI</span>
           <div>
             <h4>Amazon Bedrock AI Investigation Guidance</h4>
             <span className="model-chip">Model: amazon.nova-lite-v1:0</span>
@@ -1223,7 +1319,7 @@ function CaseEditor({ initialCase, onSave, onStatusChange, onOpen8D }) {
               Save Findings
             </button>
             <button className="btn btn-primary" onClick={handleClose}>
-              Verify & Close Investigation ✓
+              Verify & Close Investigation
             </button>
           </>
         )}
@@ -1232,7 +1328,7 @@ function CaseEditor({ initialCase, onSave, onStatusChange, onOpen8D }) {
             className="btn btn-secondary"
             onClick={() => onStatusChange("INVESTIGATING", { hypothesis, supporting_evidence: evidence, corrective_action: action, verification_notes: notes, issue_recurred: recurred })}
           >
-            Re-open Investigation ↺
+            Re-open Investigation
           </button>
         )}
       </div>

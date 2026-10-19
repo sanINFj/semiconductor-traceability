@@ -225,14 +225,19 @@ export default function LiveAnalysisConsole({ onLotAnalyzed }) {
           <span className="eyebrow">AUTOMATED TEST EQUIPMENT (ATE) INGESTION</span>
           {loadedFileName && (
             <span className="ate-file-loaded-pill">
-              ✓ Loaded: {loadedFileName}
+              Loaded: {loadedFileName}
             </span>
           )}
         </div>
         <div className="ate-drop-row">
           <div className="ate-upload-trigger">
             <label className="file-upload-label">
-              📁 Upload ATE Test Run (.csv / .json)
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ marginRight: 6 }}>
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              Upload ATE Test Run (.csv / .json)
               <input
                 type="file"
                 accept=".csv,.json,text/csv,application/json"
@@ -248,21 +253,21 @@ export default function LiveAnalysisConsole({ onLotAnalyzed }) {
               className="ate-preset-btn excursion"
               onClick={() => handleLoadPreset("EXCURSION")}
             >
-              ⚡ Excursion (88.5%)
+              Excursion (88.5%)
             </button>
             <button
               type="button"
               className="ate-preset-btn nominal"
               onClick={() => handleLoadPreset("NOMINAL")}
             >
-              ⚡ Nominal (98.2%)
+              Nominal (98.2%)
             </button>
             <button
               type="button"
               className="ate-preset-btn probe"
               onClick={() => handleLoadPreset("PROBE_RESISTANCE")}
             >
-              ⚡ Probe Wear (89.2%)
+              Probe Wear (89.2%)
             </button>
           </div>
         </div>
@@ -371,7 +376,7 @@ export default function LiveAnalysisConsole({ onLotAnalyzed }) {
           </div>
         </div>
 
-        {error && <div className="error-banner">⚠️ {error}</div>}
+        {error && <div className="error-banner">Notice: {error}</div>}
 
         <div className="form-actions-row">
           <span className="api-endpoint-text">
@@ -468,7 +473,7 @@ export default function LiveAnalysisConsole({ onLotAnalyzed }) {
           {result.ai_investigation && (
             <div className="ai-brief-card">
               <div className="ai-brief-header">
-                <span className="ai-badge">🤖 AMAZON BEDROCK NOVA</span>
+                <span className="ai-badge">AMAZON BEDROCK NOVA</span>
                 <span className="mono text-muted">
                   Model: {result.ai_investigation.model_id}
                 </span>
@@ -480,7 +485,7 @@ export default function LiveAnalysisConsole({ onLotAnalyzed }) {
               </div>
               <div className="ai-brief-footer">
                 <small className="muted">
-                  ⚠️ {result.ai_investigation.disclaimer}
+                  Notice: {result.ai_investigation.disclaimer}
                 </small>
               </div>
             </div>

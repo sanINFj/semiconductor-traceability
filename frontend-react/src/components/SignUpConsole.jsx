@@ -152,7 +152,7 @@ export default function SignUpConsole() {
               </div>
             </div>
 
-            {error && <div className="error-banner">⚠️ {error}</div>}
+            {error && <div className="error-banner">Notice: {error}</div>}
 
             <button
               type="submit"
@@ -192,7 +192,7 @@ export default function SignUpConsole() {
             </div>
 
             {message && <div className="notice info-notice">{message}</div>}
-            {error && <div className="error-banner">⚠️ {error}</div>}
+            {error && <div className="error-banner">Notice: {error}</div>}
 
             <button
               type="submit"

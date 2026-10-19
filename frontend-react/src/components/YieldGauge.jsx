@@ -104,7 +104,13 @@ export default function YieldGauge({ lotYield, baselineYield, thresholdPp = 5.0,
       <div className="gauge-footer-note">
         {isAlert && (
           <div className="alert-notice-box">
-            <span className="notice-icon">⚠️</span>
+            <span className="notice-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                <line x1="12" y1="9" x2="12" y2="13"></line>
+                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+              </svg>
+            </span>
             <span>
               <strong>Yield Excursion Flagged:</strong> Lot yield dropped by {Math.abs(Number(delta))} percentage points, exceeding the {thresholdPp} pp anomaly threshold.
             </span>
@@ -112,7 +118,11 @@ export default function YieldGauge({ lotYield, baselineYield, thresholdPp = 5.0,
         )}
         {!isAlert && !isInsufficient && (
           <div className="normal-notice-box">
-            <span className="notice-icon">✓</span>
+            <span className="notice-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </span>
             <span>
               <strong>Nominal Variation:</strong> Lot yield is within the acceptable {thresholdPp} pp baseline tolerance band.
             </span>
@@ -120,7 +130,13 @@ export default function YieldGauge({ lotYield, baselineYield, thresholdPp = 5.0,
         )}
         {isInsufficient && (
           <div className="warning-notice-box">
-            <span className="notice-icon">ℹ</span>
+            <span className="notice-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </span>
             <span>
               <strong>Insufficient Comparison Data:</strong> No comparable same-product baseline lots were found.
             </span>

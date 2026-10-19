@@ -345,7 +345,13 @@ export default function WaferMap({ lot }) {
             </div>
           ) : (
             <div className="die-placeholder-card">
-              <div className="placeholder-icon">◎</div>
+              <div className="placeholder-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="6" x2="12" y2="18"></line>
+                  <line x1="6" y1="12" x2="18" y2="12"></line>
+                </svg>
+              </div>
               <h4>Die Inspector Ready</h4>
               <p>
                 Click any die in the circular wafer map on the left to inspect electrical characterization,

@@ -313,7 +313,13 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
           onDragLeave={handleDrag}
           onDrop={handleDrop}
         >
-          <div className="drop-icon">⚡</div>
+          <div className="drop-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="17 8 12 3 7 8"></polyline>
+              <line x1="12" y1="3" x2="12" y2="15"></line>
+            </svg>
+          </div>
           <h3>Drag & Drop ATE Data File Here (.csv or .json)</h3>
           <p className="muted">
             Accepts wafer probe die maps, tester run logs, or lot JSON records
@@ -347,7 +353,11 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
                     title="Download raw file"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    ⬇
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
                   </a>
                 </div>
                 <h4>{preset.title}</h4>
@@ -358,7 +368,7 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
                   onClick={() => executePipeline(preset.sampleData, preset.name)}
                   disabled={processing}
                 >
-                  ⚡ Auto-Generate Now ↗
+                  Auto-Generate Now ↗
                 </button>
               </div>
             ))}
@@ -395,7 +405,7 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
         </div>
       )}
 
-      {error && <div className="error-banner">⚠️ {error}</div>}
+      {error && <div className="error-banner">Notice: {error}</div>}
 
       {/* Generated Dossier View */}
       {generatedLot && !processing && (
@@ -413,19 +423,19 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
                 className="btn btn-primary"
                 onClick={() => setShow8DModal(true)}
               >
-                📋 View Full 8D Incident Report
+                View Full 8D Incident Report ↗
               </button>
               <button
                 className="btn btn-secondary"
                 onClick={() => navigate("/compare")}
               >
-                ⇋ Open in Lot Comparator ↗
+                Open in Lot Comparator ↗
               </button>
               <button
                 className="btn btn-secondary"
                 onClick={() => navigate(`/lots/${generatedLot.lot_id}`)}
               >
-                ▦ Open Lot Details ↗
+                Open Lot Details ↗
               </button>
             </div>
           </div>
@@ -452,7 +462,7 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
                 -{generatedLot.yield_drop_pp} pp
               </div>
               <div className="kpi-sub">
-                {generatedLot.status === "ALERT" ? "⚠️ Exceeded 5.0 pp threshold" : "Nominal tolerance"}
+                {generatedLot.status === "ALERT" ? "Exceeded 5.0 pp threshold" : "Nominal tolerance"}
               </div>
             </div>
 
@@ -509,7 +519,7 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
           {generatedLot.ai_investigation && (
             <div className="panel ai-investigation-panel">
               <div className="ai-brief-header">
-                <span className="ai-badge">🤖 AMAZON BEDROCK GENERATIVE AI (NOVA)</span>
+                <span className="ai-badge">AMAZON BEDROCK GENERATIVE AI (NOVA)</span>
                 <span className="mono text-muted">Model: {generatedLot.ai_investigation.model_id}</span>
               </div>
               <div className="ai-brief-body">
@@ -517,7 +527,7 @@ export default function AutoIngestionHub({ lots, onAddLot }) {
               </div>
               <div className="ai-brief-footer">
                 <small className="muted">
-                  ⚠️ {generatedLot.ai_investigation.disclaimer}
+                  Notice: {generatedLot.ai_investigation.disclaimer}
                 </small>
               </div>
             </div>

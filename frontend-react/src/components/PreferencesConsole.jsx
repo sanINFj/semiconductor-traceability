@@ -144,7 +144,7 @@ export default function PreferencesConsole({ onAuthStateChange }) {
           </div>
 
           {message && <div className="notice info-notice mt-4">{message}</div>}
-          {error && <div className="error-banner mt-4">⚠️ {error}</div>}
+          {error && <div className="error-banner mt-4">Notice: {error}</div>}
 
           <div className="notice warning-notice mt-4">
             <strong>Amazon SNS Subscription Verification:</strong> AWS SNS requires
@@ -183,7 +183,7 @@ export default function PreferencesConsole({ onAuthStateChange }) {
               />
             </div>
 
-            {error && <div className="error-banner">⚠️ {error}</div>}
+            {error && <div className="error-banner">Notice: {error}</div>}
             {message && <div className="notice info-notice">{message}</div>}
 
             <button
