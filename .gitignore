@@ -26,6 +26,7 @@ secrets.json
 *.backup
 *.backup-*
 *.before_*
+*.before-*
 *.pre-*
 *.before-finalization
 
